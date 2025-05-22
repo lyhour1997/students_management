@@ -7,13 +7,22 @@
     @component('components.message') 
     @endcomponent
 
-    <div class="pb-4">
-        <a href="{{route('users.create')}}" class="btn btn-sm btn-primary py-2 px-3 fw-bold ">
-            <i class="fa-solid fa-plus"></i> Add
+{{-- search and create --}}
+    <div class="d-flex justify-content-between align-content-center py-2">
+        <a href="{{route('teachers.create')}}" class="btn btn-success fw-bold ">
+            <i class="fas fa-plus"></i> Create
         </a>
+
+        <form action="" class="pt-1">
+            <input type="text" name="" class="py-sm-1" placeholder=" Seacher ...">
+            <button type="submit" class="px-2 py-1">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
     </div>
 
-    <table class="table table-bordered">
+{{-- tbale --}}
+    <table class="table table-bordered mt-2">
         <thead>
             <tr>
                 <th class="fs-5">#</th>
